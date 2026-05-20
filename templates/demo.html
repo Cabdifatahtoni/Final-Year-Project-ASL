@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recognition Demo | ASL Recognition System</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Archivo+Black&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+    <main class="demo-page">
+
+        <header class="demo-header">
+            <a href="/" class="back-link">← Back to Project</a>
+            <p>ASL Recognition Demo</p>
+        </header>
+
+        <section class="demo-hero">
+            <p class="section-kicker">Recognition System</p>
+
+            <h1 class="demo-title">
+                Upload a sign video.
+                <span>Get the prediction.</span>
+            </h1>
+
+            <p class="demo-subtitle">
+                Record or upload a short isolated ASL sign video. The system extracts hand and pose
+                landmarks, normalizes the sequence, and predicts the sign using the trained model.
+            </p>
+        </section>
+
+        <section class="demo-workspace">
+
+            <div class="upload-card">
+                <div class="upload-card-header">
+                    <h2>Input video</h2>
+                    <p>Use a 2–4 second clip with your upper body and hands clearly visible.</p>
+                </div>
+
+                <form method="POST" enctype="multipart/form-data" id="uploadForm">
+                    <label class="demo-upload-box" for="videoInput">
+                        <input id="videoInput" type="file" name="video" accept="video/*" capture="user" required>
+                        <span class="upload-mark">+</span>
+                        <strong>Choose or record video</strong>
+                        <small>MP4, MOV, AVI, MKV, or WEBM</small>
+                    </label>
+
+                    <video id="videoPreview" class="demo-video-preview" controls hidden></video>
+
+                    <button type="submit" class="analyze-button">
+                        Classify Sign
+                    </button>
+                </form>
+
+                {% if error %}
+                <div class="demo-error">
+                    {{ error }}
+                </div>
+                {% endif %}
+            </div>
+
+            <div class="result-card">
+                {% if prediction %}
+                    <p class="result-label">Predicted sign</p>
+
+                    <h2 class="prediction-word">
+                        {{ prediction.word }}
+                    </h2>
+
+                    <div class="confidence-line">
+                        <span>Confidence</span>
+                        <strong>{{ prediction.confidence }}%</strong>
+                    </div>
+
+                    <div class="top-five">
+                        <h3>Top 5 predictions</h3>
+
+                        {% for item in top5 %}
+                        <div class="prediction-row">
+                            <div>
+                                <small>{{ loop.index }}</small>
+                                <span>{{ item.word }}</span>
+                            </div>
+
+                            <strong>{{ item.confidence }}%</strong>
+                        </div>
+                        {% endfor %}
+                    </div>
+                {% else %}
+                    <div class="result-empty">
+                        <p class="result-label">Prediction output</p>
+                        <h2>Waiting for video</h2>
+                        <p>
+                            After classification, the predicted sign and top 5 alternatives
+                            will appear here.
+                        </p>
+                    </div>
+                {% endif %}
+            </div>
+
+        </section>
+
+    </main>
+
+    <script src="{{ url_for('static', filename='js/app.js') }}"></script>
+</body>
+</html>

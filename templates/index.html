@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Year Project | ASL Recognition</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Archivo+Black&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+    <!-- HERO SECTION -->
+    <main class="hero">
+        <div class="hero-inner">
+
+            <div class="photo-card card-left-main">
+                <img src="{{ url_for('static', filename='images/WhatsApp Image 2026-05-20 at 2.30.04 PM.jpeg') }}" alt="Project member">
+                <span>01</span>
+            </div>
+
+            <div class="photo-card card-bottom-main">
+                <img src="{{ url_for('static', filename='images/WhatsApp Image 2026-05-20 at 2.38.44 PM.jpeg') }}" alt="Project member">
+                <span>02</span>
+            </div>
+
+            <div class="photo-card card-right-main">
+                <img src="{{ url_for('static', filename='images/WhatsApp Image 2026-05-20 at 2.49.30 PM.jpeg') }}" alt="Project member">
+                <span>03</span>
+            </div>
+
+            <section class="hero-center">
+                <p class="small-label">Artificial Intelligence Project</p>
+
+                <h1>
+                    <span>FINAL YEAR</span>
+                    <span>PROJECT</span>
+                </h1>
+
+                <div class="date-row">
+                    <div class="date-card">
+                        <small>Month</small>
+                        <strong>June</strong>
+                    </div>
+
+                    <div class="date-card">
+                        <small>Year</small>
+                        <strong>2026</strong>
+                    </div>
+                </div>
+
+               <a href="/demo" class="hero-button">Go to Recognition Demo</a>
+            </section>
+
+        </div>
+    </main>
+
+    <!-- SECTION 2: FINAL YEAR PROJECT SUMMARY -->
+    <section class="final-year-section" id="final-year-summary">
+        <div class="section-inner">
+
+            <div class="summary-column reveal-left">
+                <p class="section-kicker">Final Year Project Summary</p>
+
+                <h2 class="section-title">
+                    What is a final year project?
+                </h2>
+
+                <p class="summary-text">
+                    A final year project is the culminating academic work that allows students
+                    to transform classroom knowledge into a practical and meaningful system.
+                    It tests research ability, technical implementation, analysis, and presentation.
+                </p>
+
+                <p class="summary-text">
+                    Historically, final year projects became an important part of university
+                    education as a way to bridge theory and practice. They help students demonstrate
+                    independence, problem solving, innovation, and readiness for professional work.
+                </p>
+            </div>
+
+            <div class="image-column reveal-right">
+                <div class="university-frame">
+                    <img src="{{ url_for('static', filename='images/40bd19e5-f4d5-4b04-ae28-446242d4b3f2.jpg') }}" alt="University image">
+                    <div class="university-caption">
+                        University inspiration · Oxford University, UK
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SECTION 3: PROJECT OVERVIEW -->
+    <section class="project-overview-section" id="project-overview">
+        <div class="project-overview-inner">
+
+            <div class="project-center reveal-up">
+                <p class="section-kicker">Project Overview</p>
+
+                <h2>
+                    ASL Sign Recognition System
+                </h2>
+
+                <p class="project-summary-text">
+                    This project is an artificial intelligence based sign language recognition
+                    system designed to classify isolated American Sign Language signs from short
+                    video clips. It extracts hand and body pose landmarks, normalizes the movement
+                    sequence, and uses a trained Light Transformer model to predict the performed sign.
+                </p>
+
+                <div class="project-stats">
+                    <div class="project-stat">
+                        <span>50</span>
+                        <p>ASL signs</p>
+                    </div>
+
+                    <div class="project-stat">
+                        <span>10,000</span>
+                        <p>training samples</p>
+                    </div>
+
+                    <div class="project-stat">
+                        <span>78%</span>
+                        <p>best test accuracy</p>
+                    </div>
+                </div>
+
+                <ul class="developers-row">
+                    <li class="developer-name reveal-left">
+                        Abdifatah Abdilahi Essa
+                    </li>
+
+                    <li class="developer-name developer-name-center reveal-up">
+                        Mohamed Muuse Mohamed
+                    </li>
+
+                    <li class="developer-name reveal-right">
+                        Abdalle Omar Ahmed
+                    </li>
+                </ul>
+
+              <a href="/demo" class="launch-app-button">Launch the App</a>
+            </div>
+
+        </div>
+    </section>
+
+    <script src="{{ url_for('static', filename='js/app.js') }}"></script>
+</body>
+</html>

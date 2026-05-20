@@ -1,0 +1,24 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.env
+.venv/
+venv/
+webcam_env/
+
+# Flask uploads
+uploads/*
+!uploads/.gitkeep
+
+# models/*.keras
+# models/*.h5
+# models/*.tflite
+
+# System files
+.DS_Store
+Thumbs.db
+
+# VS Code
+.vscode/
