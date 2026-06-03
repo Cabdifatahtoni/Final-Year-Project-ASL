@@ -1,15 +1,17 @@
-# ASL Sign Recognition System
+<h1 align="center">🤟 ASL Sign Recognition System 🤟</h1>
 
-![Python](https://img.shields.io/badge/Python-3.12-blue?logo=python)
-![Flask](https://img.shields.io/badge/Flask-Web%20App-black?logo=flask)
-![TensorFlow](https://img.shields.io/badge/TensorFlow-Keras-orange?logo=tensorflow)
-![OpenCV](https://img.shields.io/badge/OpenCV-Computer%20Vision-green?logo=opencv)
-![MediaPipe](https://img.shields.io/badge/MediaPipe-Landmarks-red)
-![Status](https://img.shields.io/badge/Status-Final%20Year%20Project-success)
+<p align="center">
+  <img src="https://img.shields.io/badge/Python-3.12-blue?logo=python" alt="Python">
+  <img src="https://img.shields.io/badge/Flask-Web%20App-black?logo=flask" alt="Flask">
+  <img src="https://img.shields.io/badge/TensorFlow-Keras-orange?logo=tensorflow" alt="TensorFlow">
+  <img src="https://img.shields.io/badge/OpenCV-Computer%20Vision-green?logo=opencv" alt="OpenCV">
+  <img src="https://img.shields.io/badge/MediaPipe-Landmarks-red" alt="MediaPipe">
+  <img src="https://img.shields.io/badge/Status-Final%20Year%20Project-success" alt="Status">
+</p>
 
-A final year project demo for **isolated American Sign Language recognition** using MediaPipe landmarks and a trained **Light Transformer** model.
+A final year project demo for **isolated American Sign Language recognition** using MediaPipe landmarks and a trained **Light Transformer** deep learning model.
 
-The system accepts a short sign video, extracts hand and body pose landmarks, normalizes the sequence, and predicts the performed ASL sign using a trained deep learning model.
+The system accepts a short sign language video clip, extracts real-time hand and body pose landmarks, normalizes the frame sequence, and accurately predicts the performed ASL sign through a robust web interface
 
 ---
 
