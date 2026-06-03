@@ -57,8 +57,8 @@ The application includes a clean landing page and a recognition demo page where 
 ## Developers / Co-authors
 
 - [Abdifatah Abdilahi Essa](https://github.com/Cabdifatahtoni)
-- Mohamet Muuse Mohamed
-- Apdale Omar Ahmed
+- Mohamed Muse Mohamed
+- Abdalle Omar Ahmed
 ---
 
 ## Folder Structure
