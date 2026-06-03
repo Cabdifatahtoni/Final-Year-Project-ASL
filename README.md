@@ -56,9 +56,11 @@ The application includes a clean landing page and a recognition demo page where 
 
 ## Developers / Co-authors
 
-- [Abdifatah Abdilahi Essa](https://github.com/Cabdifatahtoni)  as Lead Developer/Testing Engineer
-- Mohamed Muse Mohamed ss Project Manager/Technical Writer
-- Abdalle Omar Ahmed as Lead Researcher/UI/UX Designer
+| Contributor | Core Development Role | Profile |
+| :--- | :--- | :--- |
+| **Abdifatah Abdilahi Essa** | Lead Software Developer / Core Testing Engineer | [@Cabdifatahtoni](https://github.com/Cabdifatahtoni) |
+| **Mohamed Muse Mohamed** | Project Manager / Lead Technical Writer |  |
+| **Abdalle Omar Ahmed** | Head AI Researcher / UI & UX Designer | |
 ---
 
 ## Folder Structure
