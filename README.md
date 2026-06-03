@@ -15,7 +15,7 @@ The system accepts a short sign language video clip, extracts real-time hand and
 
 ---
 
-## Project Overview
+## 🎯 Project Overview
 
 This project focuses on recognizing isolated ASL signs from short video clips. It was developed as a final year AI project to demonstrate the use of:
 
@@ -29,30 +29,28 @@ The application includes a clean landing page and a recognition demo page where 
 
 ---
 
-## Key Features
+## ✨ Key Features
 
-- Clean final year project landing page
-- Video upload or record option
-- MediaPipe hand and pose landmark extraction
-- Landmark normalization
-- Light Transformer model prediction
-- Top 5 predicted signs with confidence percentages
-- Flask-based web interface
-- Included trained model file
+- 🏛️ **Academic-Grade UI:** Professional final year project landing page.
+- 📹 **Dual Input Modes:** Upload pre-recorded files or record directly via webcam.
+- 🧠 **MediaPipe Processing:** Intelligent extraction of hand, face, and holistic pose coordinates.
+- 📉 **Feature Normalization:** Advanced frame alignment pipeline for robust prediction.
+- ⚡ **Light Transformer Core:** Fast, resource-optimized spatial-temporal classification.
+- 📊 **Probabilistic Metrics:** Displays top 5 predicted signs with precise confidence percentages.
 
 ---
 
-## Model Summary
+## 📊 Model Architecture Summary
 
-| Item | Value |
-|---|---|
-| Task | Isolated ASL sign recognition |
-| Number of signs | 50 |
-| Dataset size | 10,000 samples |
-| Samples per sign | 200 |
-| Input shape | 64 x 225 |
-| Best model | Light Transformer |
-| Test accuracy | 78% |
+| Architecture Metric | Specification Details |
+| :--- | :--- |
+| **Classification Task** | Isolated ASL Sign Recognition |
+| **Vocabulary Size** | 50 Distinct ASL Signs |
+| **Total Dataset Size** | 10,000 Total Video Samples |
+| **Sample Distribution** | 200 Unique Samples per Sign |
+| **Model Tensor Input** | 64 Frames × 225 Landmark Points |
+| **Core Network Engine** | Custom Light Transformer Model |
+| **Validation Evaluation** | **78% Test Accuracy** |
 
 ---
 
@@ -199,7 +197,7 @@ http://127.0.0.1:5000/demo
 
 ---
 
-## Best Video Recording Tips
+##💡 Operational Video Recording Tips
 
 For better prediction:
 
@@ -212,7 +210,7 @@ For better prediction:
 
 ---
 
-## Limitations
+## 🛑 Known Technical Limitations
 
 - The system recognizes isolated signs only.
 - It does not yet perform continuous sentence-level sign language translation.
@@ -222,7 +220,7 @@ For better prediction:
 
 ---
 
-## Future Work
+## 🔮 Roadmap & Future Improvements
 
 - Convert the trained Keras model to TensorFlow Lite.
 - Build a mobile app version.
@@ -233,7 +231,7 @@ For better prediction:
 
 ---
 
-## Tech Stack
+## 🛠️ Technology Ecosystem
 
 | Area | Tools |
 |---|---|
