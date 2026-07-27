@@ -60,7 +60,7 @@ The application includes a clean landing page and a recognition demo page where 
 | :--- | :--- | :--- |
 | **Abdifatah Abdilahi Essa** | Lead Software Developer / Core Testing Engineer | [@Cabdifatahtoni](https://github.com/Cabdifatahtoni) |
 | **Mohamed Muse Mohamed** | Project Manager / Lead Technical Writer |  |
-| **Abdalle Omar Ahmed** | Head AI Researcher / UI & UX Designer | |
+| **Abdalle Osman Ahmed** | Head AI Researcher / UI & UX Designer | |
 ---
 
 ## Folder Structure
